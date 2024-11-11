@@ -22,7 +22,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                     Deploy your Docker image
+                   //  Deploy your Docker image
                    bat 'minikube start'
                     bat 'kubectl apply -f my-kube1-deployment.yaml'
                    bat 'kubectl apply -f my-kube1-service.yaml'
