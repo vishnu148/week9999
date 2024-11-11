@@ -5,10 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    // Build your Docker image
-                    bat 'docker build -t w9-csea .'
-                  // bat 'docker tag w9-csea:latest shiv4j/w9-dh-app-csea:latest'
-                   //bat 'docker push shiv4j/w9-dh-app-csea:latest'
+                    bat 'docker build -t w9-cseb .'
+                     bat 'docker tag w9-cseb:latest shiv4j/w9-dh-app-cseb:latest'
+                      bat 'docker push shiv4j/w9-dh-app-cseb:latest'
                 }
             }
         }
