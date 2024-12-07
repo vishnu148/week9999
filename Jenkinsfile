@@ -5,9 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    bat 'docker build -t w9-csedd .'
-                    bat 'docker tag w9-csedd:latest shiv4j/w9-dh-app-csedd:latest'
-                    bat 'docker push shiv4j/w9-dh-app-csedd:latest'
+                    bat 'docker build -t finn:latest .'
+                    bat 'docker tag finn vishnu01507/finn:latest'
+                    bat 'docker push vishnu01507/finn:latest'
                 }
             }
         }
